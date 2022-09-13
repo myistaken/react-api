@@ -21,7 +21,6 @@ function request(url, data=false,method='GET',type='FORM_DATA'){
         }
     });
 }
-
 export const post = (url,data)=> request(url,data,'POST');
-export const postJSON =(url,data)=> request(url,data,'POST','JSON');
+export const postJSON =(url,data)=> request(url,data,'PUT','JSON');
 export const get = url => request(url);
